@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>120 Bahadur - Official Movie Page</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="monetag" content="230e9144a6585bbf24b7d93f6e07b66c">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            border-bottom: 3px solid #ffe600;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ffe600;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        header p {
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: #fff7b2;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            max-width: 900px;
+            margin: 40px 20px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+            flex-grow: 1;
+        }
+
+        .poster {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(255, 75, 43, 0.7);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .poster:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #ffde59;
+            margin-top: 0;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+            font-size: 2rem;
+            border-bottom: 2px solid #ffde59;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #f0e68c;
+            margin-bottom: 25px;
+            text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+        }
+
+        ul.cast-list {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        ul.cast-list li {
+            background: #ff6e40;
+            padding: 10px 18px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px rgba(255, 110, 64, 0.6);
+            font-weight: 600;
+            font-size: 1.1rem;
+            flex: 1 1 130px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        ul.cast-list li::before {
+            content: "🎭";
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.3rem;
+            filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+        }
+
+        iframe.trailer {
+            width: 100%;
+            height: 450px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(255, 75, 43, 0.8);
+            margin-bottom: 35px;
+            border: none;
+        }
+
+        .announcement {
+            background: #ffe600;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            text-shadow: none;
+        }
+
+        footer {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: #ffe600;
+            letter-spacing: 1.2px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            ul.cast-list li {
+                flex: 1 1 100%;
+            }
+
+            iframe.trailer {
+                height: 260px;
+            }
+
+            .announcement {
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-size: x-large;
+            color: rgb(233, 47, 44);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🎬 120 Bahadur</h1>
+        <p>Action | Drama | 2025</p>
+    </header>
+
+    <div class="container">
+        <!-- <img src="120bahadur_poster.jpg" alt="120 Bahadur Poster" class="poster" /> -->
+
+        <h2>🎞 Official Trailer</h2>
+         <iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/xfNwBCn2r5M?si=cfIQGgAGcGoAahDU" 
+         title="120 Bahadur Trailer" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <hr>
+
+        <h2>120 BAHADUR FULL MOVIE</h2>
+        <iframe class="trailer" src="https://drive.google.com/file/d/1LmJBEKhgHdS-ArKPsEMnyQvsJJpAtMy7/preview" allow="autoplay"
+            title="FULL MOVIE" allowfullscreen>
+        </iframe>
+
+        <h2>📜 Description</h2>
+        <p>
+            <strong>120 Bahadur</strong> is an intense, gripping action drama following a group of
+            brave fighters on a mission that tests their courage, loyalty, and survival instincts.
+            Packed with emotional depth, high-octane sequences, and powerful performances, this
+            2025 blockbuster promises to keep viewers on the edge of their seats.
+        </p>
+
+        <h2>👥 Cast</h2>
+        <ul class="cast-list">
+            <li>Farhan Akhtar</li>
+            <li>Raashii Khanna</li>
+            <li>Sparsh Walia</li>
+            <li>Ankit Siwach</li>
+            <li>Vivan Bhatena</li>
+            <li>Dhanveer Singh</li>
+            <li>Sahib Verma</li>
+            <li>Ajinkya Deo</li>
+            <li>Eijaz Khan</li>
+            <li>Ashutosh Shukla</li>
+            <li>Atul Singh</li>
+            <li>Brijesh Karanwal</li>
+            <li>Devendra Ahirwar</li>
+            <li>Digvijay Pratap</li>
+        </ul>
+
+
+        <h2>🎶 Music</h2>
+        <p>Composed by Top Industry Composers & Featured Artists.</p>
+    </div>
+
+    <footer>
+        &copy; 2025 120 Bahadur | Designed by as77880
+    </footer>
+</body>
+
+</html>
